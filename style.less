@@ -1,0 +1,324 @@
+@color-base: white;
+@color-hover: #39a6ab;
+
+
+/*----------TEXT-----------------*/
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  font-family: museo-sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.004); 
+
+  background-color: white;
+}
+
+body {
+  
+  	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+
+}
+
+p {
+	font-size: 95%;
+	z-index: 10;
+	line-height: 140%;
+
+}
+
+
+ul {
+
+	text-align: center;
+	padding-top: 5%;
+
+	li {
+		display: inline-block;
+		margin: 0 40px 0 0;
+	}
+}
+
+a{
+	color: white;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: @color-hover;
+}
+
+::selection {
+    color: black; 
+    background: @color-hover;
+}
+
+
+ 
+ /*----------LAYOUT-----------------*/
+
+.intro {
+	/*position: relative;*/
+	width: 100%;
+	height: 75%;
+	background: url(assets/img/bc.jpg) top center;
+	background-size: cover;
+
+
+	text-align: center; 
+
+	header {
+		margin-bottom: 4%;
+		padding-top: 17%;
+		padding-right: 25%;
+		text-align: center;	
+	}
+}
+
+
+.container {
+	width: 90%;
+	display: -webkit-flex; 
+	-webkit-flex-flow: row wrap;
+	align-content: flex-start;
+	padding: 2%;
+
+	margin: 2% auto;
+}
+
+.bubble-content {
+		
+		color: white;
+		font-weight: 400;
+		text-align: center;
+		width: 46%;
+		height: 500px;	
+		margin: 2%;	
+
+		
+		h2 {
+			opacity: 0;
+			margin: 15% 0 5% 0;
+			font-size: 300%;
+			letter-spacing: 5px;
+			font-weight: 900;
+			.transitions;
+		}
+			
+		p {
+			opacity: 0;
+			width: 50%;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.7;
+			text-align: center;
+			margin: 0 auto;
+			.transitions;
+		}
+
+		i {
+			margin-top: 20px;
+			color: white;
+		}
+
+		a{
+			margin-top:20px;
+		}
+
+
+
+		.transitions;
+		
+		
+		&:hover{ 
+
+			h2 {
+				opacity: 1;
+				
+			}
+
+			p {
+				opacity: 1;
+			}
+		}
+}
+
+ /*--------------------------------*/
+
+ /*----------PROPERTIES-----------------*/
+
+
+.fa {
+
+	color: black;
+
+	.transitions-fast; 
+	&:hover {
+			color: @color-hover;
+		}
+
+}
+
+.profile-image-cirkular {
+   width: 10%;
+   height: 10%;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    vertical-align:middle;
+    margin-left: 3%;
+}
+
+.title-content {
+	padding-top: 4%;
+	text-align: center;	
+	font-size: 150%;
+	width: 70%;
+	margin: 0 auto;
+
+	h2 {
+		display: inline-block;
+		font-style: bold;
+		font-size: 160%;
+		font-weight: 700;
+		color: black;
+		text-align: center;
+	    letter-spacing: 7px;
+	    margin-bottom: 2%;
+	    color: #222;
+	}
+
+	p {
+		font-size: 75%;
+		margin: 1em 0;
+		color: #222;
+		font-weight: 300;
+	}
+}
+
+
+#logo{
+
+	height: 300px;
+	width: 600px;
+	margin: 0 auto;
+	background: url(assets/img/logo.png) ;
+
+}
+
+.transitions {
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.transitions-fast {
+
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+ /*--------------------------------*/
+
+@media (min-width: 750px) and (max-width: 1100px){
+
+
+.bubble-content{
+	width: 100%;
+
+	h2{
+		opacity: 1;
+	}
+
+	p{
+		opacity: 1;
+	}
+
+}	
+
+
+
+
+}
+
+@media (max-width: 770px) {
+
+
+
+	#logo{
+
+		height: 180px;
+		width: 300px;
+		margin: 0 auto;
+		background: url(assets/img/logo_min.png) ;
+
+	}
+
+	ul {
+
+		li {
+			
+			margin: 0 30px 0 0;
+		}
+	}
+
+	.intro {
+
+		header {
+			padding-top: 50%;
+			padding-right: 0;
+		}
+	}
+
+	.container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.bubble-content {
+		width: 100%;
+		display: block;
+		margin: 0;
+		
+		h2{
+			opacity: 1;
+		}		
+
+		p{
+			opacity: 1;
+			width: 90%;
+		}
+	}
+
+	.title-content {
+		
+		text-align: center;	
+		font-size: 130%;
+		width: 90%;
+		padding: 10% 5% 5% 5%;
+
+	h2 {
+			font-size: 100%;
+			text-align: center;
+		}
+	}
+
+
+}
+
+
+
+
