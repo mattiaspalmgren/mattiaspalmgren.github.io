@@ -1,88 +1,28 @@
 <!DOCTYPE html>
+<meta charset="utf-8"/> 
+<html ng-app="mpApp">
+
+<!-- BOOTSTRAP -->
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="bower_components/bootstrap/js/carousel.js"></script>
+
+<!-- FONT AWESOME -->
+<link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- ANGULAR -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers/main.controller.js"></script>
+
+<!-- STYLE -->
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+
+
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="initial-scale=1">		
-		
-		<title> mattiaspalmgren</title>
-
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-
-		<!-- GOOGLE-FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Muli:400italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>	
-		
-		<!-- LESS -->
-		<link rel="stylesheet/less" type="text/css" href="style.less">  
-		<script src="less.js" type="text/javascript"></script> 
-
-		<!-- AWESOME FONT -->
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">	
-		
-	</head>
-
-	<body>
-	
-		<div class="intro">
-
-				<header class="header">
-						<div id="logo"></div>
-						
-				</header>
-
-		</div>
-		
-		<div class="outro">
-				<div class="title-content">
-					<h2> Nyfiken ingenjörsstudent.</h2>
-					<p>22-årig grapp, ursprungligen från de värmländska skogarna. <br> Nu bosatt och studerandes till civilingenjör i medieteknik vid Linköpings universitet, campus Norrköping. <br> Är förtjust i såväl tekniska som estetiska aspekter av den digitala världen. </p> <p>Nedan följer ett axplock av projekt där jag haft fingrarna med i smeten, tillsammans med mina medstudenter.</p>
-					
-					<ul class="links">
-							<li> <a title="twitter.com/palmnish" href="https://twitter.com/palmnish" target="blank"> <i class="fa fa-twitter fa-2x"></i></a> </li>
-							<li> <a title="github.com/mattiaspalmgren" href="https://github.com/mattiaspalmgren" target="blank"> <i class="fa fa-github fa-2x"> </i></a> </li>
-							<li> <a title="se.linkedin.com/in/mattiaspalmgren/" href="https://se.linkedin.com/in/mattiaspalmgren/" target="blank"> <i class="fa fa-linkedin fa-2x"> </i></a> </li>
-							<li><a title="cv_mattiaspalmgren" href="assets/cv_mattiaspalmgren.pdf" target="blank"><i class="fa fa-file-text fa-2x"></i></li></a>
-					</ul>
-
-				</div>
-
-				<div class="container">
-					
-
-					<div class="bubble-content" style="background-image: url('assets/img/cover.png');" ><h2 style="font-family: Exo">POLYGON</h2>
-							
-							<p>	En polygongrafisk rymd i webbläsaren, skapad under parollen “onödigt men härligt”. Gjordes som projekt i kursen 3D datorgrafik. Miljön är skriven i WebGL med hjälp av biblioteket Three.js.<br><a title="https://github.com/petraohlin/Polygon" href="https://github.com/petraohlin/Polygon" target="blank"> <i class="fa fa-github fa-4x"> </i></a></p>
-					</div>
-
-					<div class="bubble-content " style="background-image: url('assets/img/cover2.png');"><h2 style="font-family: Josefin Sans">ATLAS</h2>
-							<p>	Ett geografispel som gjordes som projekt i kursen Kommunikation och användargränssnitt, där en fråga och tillhörande bild ska hinta användaren om vart knappnålen ska placeras. Spelet är skrivet i Javascript, med hjälp av ramverket KinekticJS, med framförallt läsplattor i åtanke som användarenhet.<br> <a title="https://github.com/CarlEnglund/Atlas" href="https://github.com/CarlEnglund/Atlas" target="blank"> <i class="fa fa-github fa-4x"> </i></a></p>
-					</div>
-
-					<div class="bubble-content " style="background-image: url('assets/img/cover3.png');"><h2 style="font-family: 'Rambla', sans-serif;">LiTHEkoll</h2>
-							<p>	Ett webbprojekt i kursen Elektronisk publicering. Idén är att låta användaren föra in och kategorisera sina transaktioner. Tjänsten presenterar sedan datan och ger användaren en överblick över dennes privatekonomi. <br> <a title="https://github.com/klaseskilson/lithekoll" href="https://github.com/klaseskilson/lithekoll" target="blank"> <i class="fa fa-github fa-4x"> </i></a></p>
-					</div>
-
-					<div class="bubble-content " style="background-image: url('assets/img/cover4.png');"><h2 style="font-family: 'Great Vibes', cursive;">Trysch</h2>
-							<p>	Vinnare av hackathonet Hackout for summer i kategorin Bästa koncept. Vi gjorde en prototyp av en webbapp för små kompisevenemang som fotbollsmatch eller pokerkväll. Tanken var att blanda element från Snapchat och Doodle. <br><br> <a title="http://hackoutforsummer.se/" href="http://hackoutforsummer.se/" target="blank">http://hackoutforsummer.se/ </a>
-					</div>
-
-					<div class="bubble-content " style="background-image: url('assets/img/cover5.png');"><h2 style="font-family: 'Londrina Solid', cursive;">LABYRINT</h2>
-							<p>	Projekt i kursen ljudfysik. Idén var att göra en digital variant av det klassiska brädspelet Labyrint, men istället för rattar styra med tonhöjden på rösten.  <br> <a title="github.com/mattiaspalmgren/Labyrint" href="https://github.com/mattiaspalmgren/Labyrint" target="blank"> <i class="fa fa-github fa-4x"> </i></a></p>
-					</div>				
-
-				</div>
-
-		</div>
-
-
-	</body>
+<head>
+	<title>mattiaspalmgren</title>
+</head>
+<body>
+	<h1>mattiaspalmgren</h1>
+</body>
 </html>
-
-			
-
