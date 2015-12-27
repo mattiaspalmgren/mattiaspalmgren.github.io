@@ -1,6 +1,17 @@
 [
   {
-      "title": "Ericsson",
-      "description": "Sådärja"
+    "title": "trippel",
+    "description": "Myself and two friends were assigned as consultants to build a web based presentation tool to use for recruitment to our study program.",
+    "thumbnail": "url(././assets/kartlas.png)"
+  },
+  {
+    "title": "Polygon",
+    "description":"En polygongrafisk rymd i webbläsaren, skapad under parollen “onödigt men härligt”. Gjordes som projekt i kursen 3D datorgrafik. Miljön är skriven i WebGL med hjälp av biblioteket Three.js.",
+    "thumbnail": "url(././assets/polygon.png)"
+  },
+  {
+    "title": "Trysch",
+    "description":"Vinnare av hackathonet Hackout for summer i kategorin Bästa koncept. Vi gjorde en prototyp av en webbapp för små kompisevenemang som fotbollsmatch eller pokerkväll. Tanken var att blanda element från Snapchat och Doodle",
+    "thumbnail":  "url(././assets/labyrint.png)"
   }
 ]
