@@ -1,0 +1,70 @@
+.project {
+	color: white;
+	padding: 1%;
+	height: 300px;
+	margin-bottom: 20px;
+
+	a {
+		color: white;
+	}
+
+	p {
+		opacity: 0;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	h2 {
+		margin-top: 30%;
+		.transitions;
+	}
+
+	i, p {
+		opacity: 0;
+		.transitions;
+	}
+
+	&:hover{ 
+		h2, p, i {
+			opacity: 1;	
+			.transitions;
+		}
+
+		h2 {
+			margin-top: 10%;
+			.transitions;
+		}
+	}
+
+}
+
+@media (max-width: @screen-sm-max) {
+	.project {
+		padding: 5%;
+		padding-top: 0;
+		h2, i, p {
+			opacity: 1;
+		}
+
+		h2 {
+			margin-top: 0;
+			padding-top: 5%;	
+		}
+
+		&:hover{ 
+			h2 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) { 
+	.project {
+		padding: 0;
+		margin-bottom: 0;
+		h2 {
+			padding-top: 5%;
+		}
+	}
+}

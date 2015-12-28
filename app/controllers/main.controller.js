@@ -11,8 +11,6 @@
         $http.get('data.json').success(function(data) {
           $scope.projects = data;
         }).then(function(){
-
-        	console.log($scope.projects);
         });
     }
 })();
