@@ -30,7 +30,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>	</head>
+	<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+</head>
 
 <body ng-controller="mainController" class="row">
 	<div class="col-md-10 col-md-offset-1">
@@ -38,11 +41,9 @@
 		<div id="intro" class="text-center">
 			<h1>mattiaspalmgren</h1>
 			
-			<p>22-årig grapp, ursprungligen från de värmländska skogarna. 
-			Nu bosatt och studerandes till civilingenjör i medieteknik vid Linköpings universitet, campus Norrköping. 
-			Är förtjust i såväl tekniska som estetiska aspekter av den digitala världen.
+			<p>Civilingenjörs-student i <a href="http://medieteknik.nu/se/">medieteknik</a> från Linköpings universitet. Befinner mig för tillfället i Schweiz, där jag gör utlandsstudier vid <a href="https://epfl.ch" target="#">EPFL</a>. Är förtjust i såväl tekniska som estetiska aspekter av den digitala världen.
 
-			Nedan följer ett axplock av projekt där jag haft fingrarna med i smeten, tillsammans med mina medstudenter.
+			Nedan följer ett axplock av projekt och erfarenheter jag än så länge tillskansat mig. 
 			</p>
 		</div>
 
@@ -54,7 +55,7 @@
 		
 		<div class="col-md-6 project" ng-repeat="project in projects" >
 			<div class="project text-center" ng-style="{'background-image': project.thumbnail}">
-				<h2 ng-style="{'font-family': project.font}">{{project.title}}</h2>
+				<h2 ng-style="{'font-family': project.font, color: project.color}" >{{project.title}}</h2>
 				<p>{{project.description}}</p>
 				<br><a ng-href='{{project.link}}' target="blank"> <i class="fa fa-github fa-4x"> </i></a>
 			</div>
