@@ -1,6 +1,8 @@
 @import "../bower_components/bootstrap/less/variables.less";
 @import "project.less";
 
+@link-color: #455F37;
+
 html, body {
 	font-family: museo-sans, sans-serif;
   	-webkit-font-smoothing: antialiased;
@@ -9,7 +11,7 @@ html, body {
 
 h1 {
 	font-size: 4em;
-	margin: 5% 0;
+	margin: 2% 0 5% 0;
 	font-family: 'Bree Serif', serif;
 }
 
@@ -27,6 +29,13 @@ li {
 
 a {
 	color: black;
+	&:hover{
+		color: @link-color;
+	}
+}
+
+#forest {
+	margin-top: 5%;
 }
 
 #intro {
@@ -49,6 +58,15 @@ a {
 			color: @link-color;
 			border-bottom: 2px solid @link-color;
 		}
+	}
+}
+
+#outro {
+	margin: 3% auto;
+	text-align: center;
+
+	i {
+		margin: 0 10px;
 	}
 }
 
