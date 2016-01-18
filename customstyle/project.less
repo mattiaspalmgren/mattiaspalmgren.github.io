@@ -43,36 +43,31 @@
 			.transitions;
 		}
 	}
-
 }
 
 @media (max-width: @screen-sm-max) {
+	
 	.project {
-		padding: 5%;
-		padding-top: 0;
-		h2, i, p {
-			opacity: 1;
+
+		height: 600px;
+
+		p {
+			font-size: 2.5em;
 		}
 
 		h2 {
-			margin-top: 0;
-			padding-top: 5%;	
+			margin: 5% auto ;
+			font-size: 3em;
 		}
 
-		&:hover{ 
-			h2 {
-				margin-top: 0;
-			}
+		h2, p, i {
+			opacity: 1;	
 		}
 	}
 }
 
-@media (max-width: @screen-sm-min) { 
-	.project {
-		padding: 0;
-		margin-bottom: 0;
-		h2 {
-			padding-top: 5%;
-		}
-	}
-}
+
+
+
+
+
