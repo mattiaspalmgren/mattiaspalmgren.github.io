@@ -63,7 +63,7 @@
 			<div class="project text-center" ng-style="{'background-image': project.thumbnail}">
 				<h2 ng-style="{'font-family': project.font, color: project.color}" >{{project.title}}</h2>
 				<p>{{project.description}}</p>
-				<br><a ng-href='{{project.link}}' target="blank"> <i class="fa fa-github fa-4x"> </i></a>
+				<br><a ng-if="project.link" ng-href='{{project.link}}' target="blank"> <i class="fa fa-github fa-4x"> </i></a>
 			</div>
 		</div>
 	</div>
