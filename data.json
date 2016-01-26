@@ -1,7 +1,7 @@
 [
   {
     "title": "ERICSSON",
-    "description":"Software Intern vid R&D i Kista. Utvecklade tillsammans med en kollega en applikation för visualisering av olika typer av testdata.",
+    "description":"Software Intern vid R&D i Kista. Utvecklade tillsammans med en kollega en webbapplikation för visualisering av olika typer av testdata.",
     "tags": "Angular, Less, HTML, Java, NoSql ",
     "thumbnail":  "url(././assets/ericsson.png)", 
     "font": "Inconsolata",
@@ -16,6 +16,15 @@
     "font": "'Rambla', sans-serif",
     "color": "White",
     "link": "https://github.com/mattiaspalmgren/trippel"
+  },
+  {
+    "title": "Play-by-ear",
+    "description": "Ett musikquiz i form av en Android-applikation. Utvecklat med hjälp av Spotifys Android SDK",
+    "tags": "Android, Java",
+    "thumbnail": "url(././assets/playbyear.png)",
+    "font": "'Roboto', sans-serif",
+    "color": "White",
+    "link": "https://github.com/petraohlin/play-by-ear"
   },
   {
     "title": "Visualisering av fartygsinformation",
@@ -37,7 +46,7 @@
   },
   {
     "title": "Trysch",
-    "description":"Vinnare av hackathonet Hackout for summer i kategorin Bästa koncept. Vi gjorde en prototyp av en webbapp för små kompisevenemang som fotbollsmatch eller pokerkväll. Tanken var att blanda element från Snapchat och Doodle",
+    "description":"Vinnare av hackathonet Hackout for summer i kategorin Bästa koncept. Vi gjorde en prototyp av en webbapp för små kompisevenemang. Tanken var att blanda element från Snapchat och Doodle",
     "tags": "Spotify, Hackathon",
     "thumbnail":  "url(././assets/hofs.png)", 
     "font": "Great Vibes",
