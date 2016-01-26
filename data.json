@@ -1,7 +1,7 @@
 [
   {
     "title": "ERICSSON",
-    "description":"Software Intern vid R&D i Kista. Utvecklade tillsammans med en kollega en webbapplikation för visualisering av olika typer av testdata.",
+    "description":"Software Intern vid R&D i Kista. Utvecklade tillsammans med en kollega en webbapplikation för visualisering av olika typer av testdata. Till ändamålet använde vi bland annat Angular, Java och NoSql.",
     "tags": "Angular, Less, HTML, Java, NoSql ",
     "thumbnail":  "url(././assets/ericsson.png)", 
     "font": "Inconsolata",
@@ -10,7 +10,7 @@
   },
   {
     "title": "trippel",
-    "description": "Gjorde tillsammans med två vänner, på uppdrag av Linköpings universitet, en webbapplikation för presentation av studentprojekt som gjorts på medieteknik-programmet.",
+    "description": "Gjorde tillsammans med två vänner, på uppdrag av Linköpings universitet, en webbapplikation för presentation av studentprojekt som gjorts på medieteknik-programmet. Applikationen utvecklades i Angular.",
     "tags": "Angular, Bootstrap, CSS, HTML",
     "thumbnail": "url(././assets/trippel.png)",
     "font": "'Rambla', sans-serif",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Visualisering av fartygsinformation",
-    "description":"Kandidatarbete. Utvecklade en webbapplikation för visualisering av fartyg- och väderdata för SMHI.",
+    "description":"Kandidatarbete. Utvecklade en webbapplikation för visualisering av fartygs- och väderdata för SMHI. Mycket fokus under projektets gång låg på att lära oss utvecklingmetodiken scrum.",
     "tags": "Angular, Agile, Java, Scrum",
     "thumbnail": "url(././assets/colu.png)",
     "font": "'Ropa Sans', sans-serif",
