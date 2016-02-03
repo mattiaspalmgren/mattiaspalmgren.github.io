@@ -33,7 +33,12 @@ a {
 	&:hover{
 		color: @link-color;
 	}
+	&:focus {
+		color: black;
+	}
 }
+
+a:focus, a:hover
 
 .row {
 	margin: 0;
@@ -69,6 +74,11 @@ a {
 			color: @link-color;
 			border-bottom: 2px solid @link-color;
 		}
+
+		&:focus {
+			color: black;
+		};
+
 	}
 }
 
