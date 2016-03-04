@@ -3,7 +3,9 @@
 	padding: 1%;
 	height: 350px;
 	margin-bottom: 20px;
-	background-position: center; 
+	background-position: center;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1); 
 
 	a {
 		color: white;
@@ -33,6 +35,11 @@
 	}
 
 	&:hover{ 
+
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0); 
+		.transitions;
+
 		h2, p, i {
 			opacity: 1;	
 			.transitions;
@@ -46,8 +53,13 @@
 }
 
 @media (max-width: @screen-sm-max) {
+	.row {
+		margin-left: 0;
+	}
 	
 	.project {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0); 
 
 		height: 600px;
 
