@@ -1,7 +1,8 @@
 @import "../bower_components/bootstrap/less/variables.less";
 @import "project.less";
 
-@link-color: #455F37;
+@link-color: rgba(101, 141, 62, 0.49);
+
 
 html, body {
 	font-family: museo-sans, sans-serif;
@@ -38,6 +39,7 @@ a {
 	}
 }
 
+
 a:focus, a:hover
 
 .row {
@@ -66,17 +68,18 @@ a:focus, a:hover
 	}	
 
 	a {
-		color: black;
-		border-bottom: 2px solid black;
+		background-color: whitesmoke;
+		padding: 1px 0;
 
 		&:hover{ 
+			background-color: @link-color;
 			text-decoration: none;
-			color: @link-color;
-			border-bottom: 2px solid @link-color;
+			color: black;
 		}
 
 		&:focus {
 			color: black;
+			text-decoration: none;
 		};
 
 	}
