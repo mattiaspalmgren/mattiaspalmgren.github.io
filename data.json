@@ -18,6 +18,15 @@
     "link": "https://github.com/mattiaspalmgren/trippel"
   },
   {
+    "title": "SNOWILY",
+    "description": "En protoyp av ett nytt grepp på skidkartor. Där tanken var att färga skidbackarna baserat på snöförhållanden, och inte på svårighet. Applikationen byggdes med hjälp av D3 och React.",
+    "tags": "D3, Javascript, React",
+    "thumbnail": "url(././assets/snowily.png)",
+    "font": "'Helvetica'",
+    "color": "White",
+    "link": "https://github.com/mattiaspalmgren/snowily"
+  },
+  {
     "title": "Play-by-ear",
     "description": "Ett musikquiz i form av en Android-applikation. Utvecklat med hjälp av Spotifys Android SDK",
     "tags": "Android, Java",
