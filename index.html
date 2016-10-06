@@ -25,6 +25,7 @@
 	 <link rel="SHORTCUT ICON" HREF="assets/favicon.ico">
 
 	<!-- GOOGLE-FONTS -->	
+	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Muli:400italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400' rel='stylesheet' type='text/css'>
@@ -39,38 +40,38 @@
 </head>
 
 <body ng-controller="mainController" class="row">
-	<div class="col-md-10 col-md-offset-1">
+	<div id="container" class="col-md-10 col-md-offset-1">
 	
 		<div id="intro" class="text-center">
-			<div id="forest">
-			<i class="fa fa-tree fa-2x" style="color: #587F39"></i><i class="fa fa-tree fa-1x" style="color:#435833"></i><i class="fa fa-tree fa-3x" style="color: #455F37"></i><i class="fa fa-tree fa-2x" style="color: #658D3E"></i><i class="fa fa-tree" style="color: #3F692C"></i>
+			<div id="planes">
+			<i class="fa fa-paper-plane-o fa-2x" style="color:black"></i><i class="fa fa-paper-plane-o fa-1x" style="color:black"></i><i class="fa fa-paper-plane-o fa-3x" style="color:black"></i><i class="fa fa-paper-plane-o fa-2x" style="color:black"></i><i class="fa fa-paper-plane-o" style="color:black"></i>
 			</div>
 			<h1>mattiaspalmgren</h1>
 			
-			<p>Civilingenjörs-student i <a href="http://medieteknik.nu/se/">medieteknik</a> från Linköpings universitet. Befinner mig för tillfället i Schweiz, där jag gör utlandsstudier vid <a href="https://epfl.ch" target="#">EPFL</a>. Är förtjust i såväl tekniska som estetiska aspekter av den digitala världen.
+			
+			<p>Last year engineering student, currently pursuing a master in computer science</a> from Linköpings university. Fond of both technical as well as esthetic aspects of the digital world. 
 
-			Nedan följer ett axplock av projekt och erfarenheter jag än så länge tillskansat mig. 
+			Below is some of my experiences and projects I've done so far. 
 			</p>
+			
+
 		</div>
 
 		<ul>
 			<links href="https://github.com/mattiaspalmgren" icon="github"></links>
 			<links href="https://se.linkedin.com/in/mattiaspalmgren/" icon="linkedin"></links>
-			<links href="assets/cv_mattiaspalmgren.pdf" icon="file-text"></links>
+			<links href="assets/cv_mattiaspalmgren.pdf" icon="file-text-o"></links>
 		</ul>
 		
 		<div class="col-md-6 project" ng-repeat="project in projects" >
 			<div class="project text-center" ng-style="{'background-image': project.thumbnail}">
 				<h2 ng-style="{'font-family': project.font, color: project.color}" >{{project.title}}</h2>
-				<p>{{project.description}}</p>
+				<p>{{project.description_en}}</p>
 				<br><a ng-if="project.link" ng-href='{{project.link}}' target="blank"> <i class="fa fa-github fa-4x"> </i></a>
 			</div>
 		</div>
 	</div>
 
-	<div id="outro" class="col-md-12 text-center footer" >
-		<forest nr="25"></forest>
-	</div>
 
 </body>
 </html>	

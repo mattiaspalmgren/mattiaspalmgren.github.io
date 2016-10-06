@@ -16,10 +16,10 @@
                     ];
 
                     $scope.colors = [
-                        "#587F39",
-                        "#435833",
-                        "#455F37",
-                        "#3F692C"
+                        "#383838",
+                        "#000000",
+                        "#363636",
+                        "#242424"
                     ];            
                     elem.addClass($scope.sizes[Math.floor(Math.random() * ($scope.sizes.length))]);
                     elem.css( "color", $scope.colors[Math.floor(Math.random() * ($scope.colors.length))]);
