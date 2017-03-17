@@ -1,0 +1,154 @@
+/*sass --watch style.scss:style.css*/
+
+$light-grey: #555;
+$grey: #d8d8d8;
+$mentimeter-blue: rgba(0, 165, 189, 0.44);
+$epfl-red: rgba(146, 0, 14, 0.55);
+$gutter: 5px;
+$row-height: 200px;
+
+@mixin link($color) {
+  padding: 1px 4px;
+  background-color: $color;
+  &:hover {
+    background-color: lighten( $color, 10% );
+  }
+}
+
+html {
+  font-family: consolas;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  border-bottom: solid 5px;
+}
+
+h2:hover {  
+  color: darken($grey, 50%);
+}
+
+.fa {
+  float: right;
+  margin-left: 2*$gutter;
+  font-size: 0.8em;
+  position: relative;
+  bottom: -0.2em;
+
+  &:hover {
+    color: darken($grey, 50%);
+  }
+}
+
+#mentimeter {
+  @include link($mentimeter-blue)
+}
+
+#epfl {
+  @include link($epfl-red)
+}
+
+#wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2*$gutter;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  height: $row-height;
+  position: relative;
+  margin-bottom: 3*$gutter;
+}
+
+.project {
+  @extend .box;
+  width: calc(55% - #{$gutter});
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 0 4*$gutter;
+  font-size: 0.9em;
+  margin: 2*$gutter 0 0 $gutter;
+
+  p {
+    color: $light-grey;
+  }
+
+  span {
+    position: absolute;
+  }
+  
+  .tags {
+    bottom: 3*$gutter;
+    &:before {
+      font-family: fontAwesome;
+      content: '\f121';
+    }
+  }
+
+  .github {
+    &:after {
+      font-family: fontAwesome;
+      content: '\f09b'; 
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+  
+}
+
+.img {
+  @extend .box;
+  width: calc(45% - #{$gutter});
+  margin: 2*$gutter $gutter 0 0; 
+  background-position: center; 
+  background-size: cover;
+}
+
+@media (max-width : 667px) {  
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #wrapper {
+    width: 90%;
+    padding: 0;
+  }
+
+  #content, #text {
+    width: 100%;
+  }
+
+  .box {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+}
+
+@media (max-width : 768px ) and (min-width: 667px ) {  
+  
+  #wrapper {
+    width: 80%;
+    padding: 0;
+  }
+
+}

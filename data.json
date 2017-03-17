@@ -1,81 +1,64 @@
 [ {
-    "title": "KIVRA",
-    "description":"",
-    "description_en": "Front End Intern. Worked on developing a template engine for Kivra's external web site. Using Contenful as back end and React for the templating.",    
-    "tags": "",
+    "title": "MENTIMETER",
+    "description": "Front End Intern. Worked as developer on the Mentimeter product - a web based interaction tool for presenters to interact with their audiences.",    
+    "tags": "Javascript, React, LESS",
     "thumbnail":  "url(././assets/kivra.png)", 
-    "font": "Neucha",
-    "color": "White",
+    "link": "https://mentimeter.com"
+  },
+  {
+    "title": "KIVRA",
+    "description": "Front End Intern. Worked on developing a template engine for Kivra's external web site. Using Contenful as back end and React for the templating.",    
+    "tags": "Javascript, React, SASS",
+    "thumbnail":  "url(././assets/kivra.png)", 
     "link": "https://kivra.com"
   },
   {
     "title": "ERICSSON",
-    "description":"Software Intern vid R&D i Kista. Utvecklade tillsammans med en kollega en webbapplikation för visualisering av olika typer av testdata. Till ändamålet använde vi bland annat Angular, Java och ElasticSearch.",
-    "description_en": "R&D Software Intern. Developed a web application for visualization of test data. Angular, Java and with ElasticSearch.",    
-    "tags": "Angular, Less, HTML, Java, NoSql ",
+    "description": "R&D Software Intern. Developed a web application for visualization of test data. Angular, Java and with ElasticSearch.",    
+    "tags": "Angular, Less, Java, NoSql ",
     "thumbnail":  "url(././assets/ericsson.png)", 
-    "font": "Inconsolata",
-    "color": "White",
     "link": ""
   },
   {
-    "title": "triple",
-    "description": "Gjorde tillsammans med två vänner, på uppdrag av Linköpings universitet, en webbapplikation för presentation av studentprojekt som gjorts på medieteknik-programmet. Applikationen utvecklades i Angular.",
-    "description_en": "Developed, with two other friends, a web application for presenting projects done by students from our program, to be used at different exhibitions. Written in Angular.",
-    "tags": "Angular, Bootstrap, CSS, HTML",
+    "title": "TRIPLE",
+    "description": "Developed, with two other friends, a web application for presenting projects done by students from our program, to be used at different exhibitions. Written in Angular.",
+    "tags": "Angular",
     "thumbnail": "url(././assets/trippel.png)",
-    "font": "'Rambla', sans-serif",
-    "color": "White",
     "link": "https://github.com/mattiaspalmgren/trippel"
   },
   {
     "title": "SNOWILY",
-    "description": "En protoyp av ett nytt grepp på skidkartor. Där tanken var att färga skidbackarna baserat på snöförhållanden, och inte på svårighet. Applikationen byggdes med hjälp av D3 och React.",
-    "description_en": "A protoype of  a new take on ski maps. Coloring the slopes accordingly to snow conditions instead of difficulty level. Written in D3 and React",
+    "description": "A protoype of  a new take on ski maps. Coloring the slopes accordingly to snow conditions instead of difficulty level. Written in D3 and React",
     "tags": "D3, Javascript, React",
     "thumbnail": "url(././assets/snowily.png)",
-    "font": "'Helvetica'",
-    "color": "White",
     "link": "https://github.com/mattiaspalmgren/snowily"
   },
   {
-    "title": "Play-by-ear",
-    "description": "Ett musikquiz i form av en Android-applikation. Utvecklat med hjälp av Spotifys Android SDK",
-    "description_en": "A android music quiz. Developed with Spotifys Android SDK", 
+    "title": "PLAY-BY-EAR",
+    "description": "A android music quiz. Developed with Spotifys Android SDK", 
     "tags": "Android, Java",
     "thumbnail": "url(././assets/playbyear.png)",
-    "font": "'Roboto', sans-serif",
-    "color": "White",
     "link": "https://github.com/petraohlin/play-by-ear"
   },
   {
-    "title": "Visualization of Voyage and Ship Information",
-    "description":"Kandidatarbete. Utvecklade en webbapplikation för visualisering av fartygs- och väderdata för SMHI. Mycket fokus under projektets gång låg på att lära oss utvecklingmetodiken scrum.",
-    "description_en":"Bachelor thesis, done in cooperation with SMHI. Developed a web application, with the purpose of visualizing route information for the shipping business.",
+    "title": "VISUALIZATION OF VOYAGE AND SHIP INFORMATION",
+    "description":"Bachelor thesis, done in cooperation with SMHI, application with the purpose of visualizing route information for the shipping business.",
     "tags": "Angular, Agile, Java, Scrum",
     "thumbnail": "url(././assets/colu.png)",
-    "font": "'Ropa Sans', sans-serif",
-    "color": "White",
     "link": "https://github.com/yerdal/colu"
   },
   {
-    "title": "Polygon",
-    "description":"En polygongrafisk rymd i webbläsaren, skapad under parollen “onödigt men härligt”. Gjordes som projekt i kursen 3D datorgrafik. Miljön är skriven i WebGL med hjälp av biblioteket Three.js.",
-    "description_en": "An interactive web experience in space with the goal to create a delightful feeling, built in WebGL by three.js.",
+    "title": "POLYGON",
+    "description": "An interactive web experience in space with the goal to create a delightful feeling, built in WebGL by three.js.",
     "thumbnail": "url(././assets/polygon.png)",
     "tags": "Three.js, Javascript",
-    "font": "Exo",
-    "color": "White",
     "link": "https://github.com/petraohlin/Polygon"
   },
   {
-    "title": "Trysch",
-    "description":"Vinnare av hackathonet Hackout for summer i kategorin Bästa koncept. Vi gjorde en prototyp av en webbapp för små kompisevenemang. Tanken var att blanda element från Snapchat och Doodle",
-    "description_en": "Winner of the category Best Concept with our prototype of an application combining the quick elements of Snapchat with the easiness of planning with Doodle",
+    "title": "TRYSCH",
+    "description": "Winner of the category Best Concept with our prototype of an application combining the quick elements of Snapchat with the easiness of planning with Doodle",
     "tags": "Spotify, Hackathon",
     "thumbnail":  "url(././assets/hofs.png)", 
-    "font": "Great Vibes",
-    "color": "White",
     "link": ""
   }
 ]

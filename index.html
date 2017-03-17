@@ -1,81 +1,65 @@
 <!DOCTYPE html>
-<meta charset="utf-8"/> 
-
-<html ng-app="mpApp">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width">
 <head>
 	<title>mattiaspalmgren</title>
-
-	<!-- BOOTSTRAP -->
-	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- FONT AWESOME -->
-	<link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
-
-	<!-- ANGULAR -->
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="app/app.js"></script>
-	<script src="app/controllers/main.controller.js"></script>
-	<script src="app/directives/links.js"></script>
-	<script src="app/directives/randomtree.js"></script>
-	<script src="app/directives/forest.js"></script>
-	
-	<!-- STYLE -->
-	<link rel="stylesheet/less" type="text/css" href="customstyle/custom.less">  
-	<script src="customstyle/less.js" type="text/javascript"></script> 
-	 <link rel="SHORTCUT ICON" HREF="assets/favicon.ico">
-
-	<!-- GOOGLE-FONTS -->	
-	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Muli:400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>	
-	<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 </head>
 
-<body ng-controller="mainController" class="row">
-	<div id="container" class="col-md-10 col-md-offset-1">
-	
-		<div id="intro" class="text-center">
-			<div id="trees">
- 				<i class="fa fa-tree fa-2x" style="color: #587F39"></i>
- 				<i class="fa fa-tree fa-1x" style="color:#435833"></i>
- 				<i class="fa fa-tree fa-3x" style="color: #455F37"></i>
- 				<i class="fa fa-tree fa-2x" style="color: #658D3E"></i>
- 				<i class="fa fa-tree" style="color: #3F692C"></i>
-			</div>
-			<h1>mattiaspalmgren</h1>
-			
-			
-			<p>Last year engineering student, currently pursuing a master in computer science</a> from Linköpings university. Fond of both technical as well as esthetic aspects of the digital world. 
+<html>
+	<body>
 
-			Below is some of my experiences and projects I've done so far. 
-			</p>
+		<div id="wrapper">
+				<h1>mattiaspalmgren 
+				<a target="_blank" href="https://linkedin.com/in/mattiaspalmgren"><i class="fa fa-linkedin-square"></i></a> 
+				<a target="_blank" href="http://www.github.com/mattiaspalmgren"><i class="fa fa-github-square"></i></a></h1>
+				<p>Last year master student in computer science from Linköpings university with one year abroad at <a target="_blank" href="http://epfl.ch"><span id="epfl">EPFL</span></a> in Switzerland. Currently writing master thesis on text analysis at <a target="_blank" href="https://mentimeter.com"><span id="mentimeter">Mentimeter</span></a> in Stockholm. Overall, fond of both technical as well as esthetic aspects of the digital world. 
+
+				Below is some of my experiences and projects I've done so far. 
+				</p>
 			
+			<div id=content>
+			</div>
 
 		</div>
 
-		<ul>
-			<links href="https://github.com/mattiaspalmgren" icon="github"></links>
-			<links href="https://se.linkedin.com/in/mattiaspalmgren/" icon="linkedin"></links>
-			<links href="assets/cv_mattiaspalmgren.pdf" icon="file-text-o"></links>
-		</ul>
+		<script>
 		
-		<div class="col-md-6 project" ng-repeat="project in projects" >
-			<div class="project text-center" ng-style="{'background-image': project.thumbnail}">
-				<h2 ng-style="{'font-family': project.font, color: project.color}" >{{project.title}}</h2>
-				<p>{{project.description_en}}</p>
-				<br><a ng-if="project.link" ng-href='{{project.link}}' target="blank"> <i class="fa fa-github fa-4x"> </i></a>
-			</div>
-		</div>
-	</div>
+			(function() {
 
+				const render_projects = (element, projects) => {
+					element.innerHTML = projects.map(project => {
+						return `
+							<div class="img" style="background-image:${project.thumbnail}"></div>
+							<div class="project">
+								<a href=${project.link}><h2 class=${linkIcon(project.link)} > ${project.title} </h2></a>
+								<p> ${project.description} </p>
+								<span class="tags"> ${project.tags}</span>
+							</div>
+							`
+					}).join('')
+				} 
 
-</body>
-</html>	
+				const render = () => {
+					const content = document.getElementById("content")
+					fetch("data.json")
+						.then(res => res.json())
+						.then(res => {
+							render_projects(content, res)
+						})
+				}
+
+				const linkIcon = (link) => {	
+					return link.includes('github') ? 'github' : '';
+				}
+
+				render()
+
+			})()
+
+		</script>
+
+	</body>
+</html>
