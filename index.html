@@ -7,59 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 </head>
-
 <html>
-	<body>
-
-		<div id="wrapper">
-				<h1>mattiaspalmgren 
-				<a target="_blank" href="https://linkedin.com/in/mattiaspalmgren"><i class="fa fa-linkedin-square"></i></a> 
-				<a target="_blank" href="http://www.github.com/mattiaspalmgren"><i class="fa fa-github-square"></i></a></h1>
-				<p>Last year master student in computer science from Linköpings university with one year abroad at <a target="_blank" href="http://epfl.ch"><span id="epfl">EPFL</span></a> in Switzerland. Currently writing master thesis on text analysis at <a target="_blank" href="https://mentimeter.com"><span id="mentimeter">Mentimeter</span></a> in Stockholm. Overall, fond of both technical as well as esthetic aspects of the digital world. 
-
-				Below is some of my experiences and projects I've done so far. 
-				</p>
-			
-			<div id=content>
-			</div>
-
-		</div>
-
-		<script>
-		
-			(function() {
-
-				const render_projects = (element, projects) => {
-					element.innerHTML = projects.map(project => {
-						return `
-							<div class="img" style="background-image:${project.thumbnail}"></div>
-							<div class="project">
-								<a href=${project.link}><h2 class=${linkIcon(project.link)} > ${project.title} </h2></a>
-								<p> ${project.description} </p>
-								<span class="tags"> ${project.tags}</span>
-							</div>
-							`
-					}).join('')
-				} 
-
-				const render = () => {
-					const content = document.getElementById("content")
-					fetch("data.json")
-						.then(res => res.json())
-						.then(res => {
-							render_projects(content, res)
-						})
-				}
-
-				const linkIcon = (link) => {	
-					return link.includes('github') ? 'github' : '';
-				}
-
-				render()
-
-			})()
-
-		</script>
-
-	</body>
+<body>
+	<div id="wrapper">
+		<h1>mattiaspalmgren 	
+			<a target="_blank" href="https://linkedin.com/in/mattiaspalmgren"><i class="fa fa-linkedin-square"></i></a><a target="_blank" href="http://www.github.com/mattiaspalmgren"><i class="fa fa-github-square"></i></a>
+		</h1>
+		<p>
+			Last year master student in computer science from Linköpings university with one year abroad at <a target="_blank" href="http://epfl.ch"><span id="epfl">EPFL</span></a> in Switzerland. Currently writing master thesis on text mining at <a target="_blank" href="https://mentimeter.com"><span id="mentimeter">Mentimeter</span></a> in Stockholm. Fond of data driven smartness, machine learning, javascript, web and esthetic aspects of the digital world. Previously worked at <a target="_blank" href="https://ericsson.com"><span id="ericsson">Ericsson</span></a> and <a target="_blank" href="https://kivra.com"><span id="kivra">Kivra.</span></a>
+		</p>
+	</div>
+</body>
 </html>
