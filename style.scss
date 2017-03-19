@@ -13,7 +13,7 @@ $kivra-green: rgba(140, 198, 70, 0.8);
 }
 
 html {
-  font-family: consolas;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
@@ -35,6 +35,7 @@ a {
 
 h1 {
   border-bottom: solid 5px;
+  font-weight: 700;
 }
 
 .fa {
