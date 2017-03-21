@@ -18,6 +18,7 @@ html {
 
 p {
   line-height: 1.5;
+  margin: 0;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
   margin: 0 auto;
   padding-top: 10%; 
   width: 100vw;
-  height: 100vh;
 }
 
 a {
@@ -69,15 +69,13 @@ h1 {
   background-image: url("assets/bc.jpg");
   background-position: center;
   margin: 0 auto;
-  width: 45%;
+  width: 500px;
   padding: 50px;
   border: 8px solid black;
 }
 
 @media (max-width: 896px) {
   #wrapper {
-    width: 100vw;
-    height: 100vh;
     background-image: none;
     border: none;
   }

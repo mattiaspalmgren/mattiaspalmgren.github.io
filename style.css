@@ -2,14 +2,14 @@ html {
   font-family: 'Source Sans Pro', sans-serif; }
 
 p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin: 0; }
 
 body {
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 10%;
-  width: 100vw;
-  height: 100vh; }
+  width: 100vw; }
 
 a {
   color: black;
@@ -56,14 +56,12 @@ h1 {
   background-image: url("assets/bc.jpg");
   background-position: center;
   margin: 0 auto;
-  width: 45%;
+  width: 500px;
   padding: 50px;
   border: 8px solid black; }
 
 @media (max-width: 896px) {
   #wrapper {
-    width: 100vw;
-    height: 100vh;
     background-image: none;
     border: none; } }
 
