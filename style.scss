@@ -42,8 +42,6 @@ h1 {
   float: right;
   margin-left: 10px;
   font-size: 1.2em;
-  position: relative;
-  bottom: 0.2em;
   &:hover {
     color: darken($grey, 50%);
   }
@@ -68,16 +66,29 @@ h1 {
 #wrapper {
   background-image: url("assets/bc.jpg");
   background-position: center;
+  box-sizing: border-box;
   margin: 0 auto;
-  width: 500px;
+  width: 50vw;
   padding: 50px;
   border: 8px solid black;
 }
 
-@media (max-width: 896px) {
+@media (min-width: 750px) and (max-width: 1080px) {
   #wrapper {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 750px) {
+
+  h1 {
+    font-size: 1.7em;
+  }
+  #wrapper {
+    width: 100vw;
     background-image: none;
     border: none;
+    padding: 40px;
   }
 }
 
